@@ -1,0 +1,70 @@
+nav {
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+a[href=""] {
+    color: white;
+}
+
+#planta {
+    font-size: 16px;
+    color: green;
+}
+
+#ver{
+    color: black;
+    grid-area: ver;
+}
+#flecha{
+    grid-area: flecha;
+}
+#cafe {
+    width: 400x;
+    height: 350px;
+    border-radius: 10px;
+}
+
+#origenes {
+    background-color: black;
+    color: white;
+}
+
+#comprar {
+    background-color: green;
+    color: white;
+}
+.header{
+    display: grid;
+    grid-template-areas: 
+    'navegador navegador'
+    'article aside';
+}
+#navegador{
+    grid-area: navegador;
+}
+#article{
+    grid-area: article;
+
+}
+#aside{
+    grid-area: aside;
+}
+#novedades{
+    color: green;
+    grid-area: novedades;
+}
+.main{
+    display: grid;
+    grid-template-areas:
+    'novedades novedades novedades novedades'
+    'costa colombia laos etiopia'
+    'ver ver flecha flecha';
+}
+footer{
+    background-color: black;
+    color: white;
+}
