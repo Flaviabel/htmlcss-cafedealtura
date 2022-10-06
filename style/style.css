@@ -1,57 +1,75 @@
-nav {
+.parte1{
     color: white;
     background-color: black;
     display: flex;
     justify-content: space-around;
     padding: 10px;
 }
-
-a[href=""] {
+.logo1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: xx-large;
+}
+nav{
+    display: flex;
+    align-items: center;
+    row-gap: 10px;
+    gap: 40px;
+}
+#sesion{
+    border-radius: 5px;
+    padding: 15px;
+    background-color: rgba(128, 128, 128, 0.641);
     color: white;
 }
-
-#planta {
-    font-size: 16px;
-    color: green;
+#logofin{
+    display: flex;
+    align-items: center;
 }
-
-#ver{
-    color: black;
-    grid-area: ver;
+.logo2{
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
-#flecha{
-    grid-area: flecha;
+a[href="tel:+34919490518"] {
+    color: white;
+    text-decoration: none;
+}
+a[href=""] {
+    color: white;
+    text-decoration: none;
 }
 #cafe {
     width: 400x;
     height: 350px;
     border-radius: 10px;
 }
-
-#origenes {
+#planta {
+    font-size: 16px;
+    color: green;
+}
+.origenes {
     background-color: black;
     color: white;
 }
-
-#comprar {
+.comprar {
     background-color: green;
     color: white;
 }
-.header{
-    display: grid;
-    grid-template-areas: 
-    'navegador navegador'
-    'article aside';
-}
-#navegador{
-    grid-area: navegador;
+.imagen{
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    gap: 25px;
 }
 #article{
-    grid-area: article;
-
+    padding: 30px;
 }
-#aside{
-    grid-area: aside;
+.origenes, .comprar{
+    border-radius: 5px;
+    border: 0;
+    padding: 15px;
 }
 #novedades{
     color: green;
@@ -63,6 +81,13 @@ a[href=""] {
     'novedades novedades novedades novedades'
     'costa colombia laos etiopia'
     'ver ver flecha flecha';
+}
+#ver{
+    color: black;
+    grid-area: ver;
+}
+#flecha{
+    grid-area: flecha;
 }
 footer{
     background-color: black;
