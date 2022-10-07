@@ -1,95 +1,177 @@
-.parte1{
+* {
+    font-family: 'Outfit', sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: white;
+}
+
+#container {
+    width: 1280px;
+    height: 2000px;
+    margin: 0.5em auto;
+    padding: 0.5em;
+
+}
+.parte1 {
     color: white;
     background-color: black;
     display: flex;
     justify-content: space-around;
-    padding: 10px;
+    height: 64px;
 }
-.logo1{
+
+.logo1 {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: xx-large;
+    font-size: 23.46px;
+
 }
-nav{
+
+nav {
     display: flex;
     align-items: center;
     row-gap: 10px;
     gap: 40px;
+    font-size: 14px;
 }
-#sesion{
+
+#sesion {
     border-radius: 5px;
     padding: 15px;
     background-color: rgba(128, 128, 128, 0.641);
     color: white;
 }
-#logofin{
+
+#logofin {
     display: flex;
     align-items: center;
 }
-.logo2{
+
+.logo2 {
     display: flex;
     align-items: center;
     gap: 15px;
 }
+
 a[href="tel:+34919490518"] {
     color: white;
     text-decoration: none;
 }
+
+a[href*="pages"] {
+    color: white;
+    text-decoration: none;
+}
+
 a[href=""] {
     color: white;
     text-decoration: none;
 }
+
+.imagen {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 40px;
+    gap: 8px;
+}
+
 #cafe {
-    width: 400x;
-    height: 350px;
-    border-radius: 10px;
+    width: 588pxx;
+    height: 390px;
+    border-radius: 20px;
 }
+
 #planta {
-    font-size: 16px;
-    color: green;
+    width: 588px;
+    height: 24px;
+    font-size: 18px;
+    color: #2A5B45;
+    line-height: 24px;
 }
+
+#titulo {
+    font-size: 40px;
+    font-weight: bold;
+    width: 588px;
+    height: 88px;
+    line-height: 44px;
+}
+
+#article {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 588px;
+    height: 232px;
+
+}
+
+p,
+.origenes,
+.comprar {
+    font-size: 14px;
+}
+
+.origenes,
+.comprar {
+    border-radius: 4px;
+    border: none;
+    color: white;
+}
+
 .origenes {
     background-color: black;
-    color: white;
+    width: 168px;
+    height: 40px;
 }
+
 .comprar {
-    background-color: green;
-    color: white;
+    background-color: #2A5B45;
+    width: 137px;
+    height: 40px;
+    margin-left: 16px;
 }
-.imagen{
+
+
+#novedades {
+    color: #2A5B45;
     display: flex;
-    justify-content: flex-start;
-    padding: 20px;
-    gap: 25px;
+    justify-content: center;
+    font-size: 24px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
 }
-#article{
-    padding: 30px;
+
+.bolsacafe {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
-.origenes, .comprar{
-    border-radius: 5px;
-    border: 0;
-    padding: 15px;
-}
-#novedades{
-    color: green;
-    grid-area: novedades;
-}
-.main{
-    display: grid;
-    grid-template-areas:
-    'novedades novedades novedades novedades'
-    'costa colombia laos etiopia'
-    'ver ver flecha flecha';
-}
-#ver{
+
+#ver {
     color: black;
-    grid-area: ver;
 }
-#flecha{
-    grid-area: flecha;
+
+#vertodos {
+    display: flex;
+    justify-content: center;
+    padding: 8%;
 }
-footer{
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    padding-left: 50%;
+    background-color: gray;
+}
+
+footer {
     background-color: black;
     color: white;
 }

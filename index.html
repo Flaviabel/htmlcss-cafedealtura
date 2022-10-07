@@ -6,105 +6,130 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+
     <title>Document</title>
 </head>
 
 <body>
-    <header>
-        <a href="">Home</a>
-        <main class="parte1">
-            <div class="logo1">
-                <a href="">cafedealtura.com</a>
-                <img src="assets/taza de cafe.png" alt="taza de cafe">
+    <div id="container">
+        <header>
+            <a href="">Home</a>
+            <main class="parte1">
+                <div class="logo1">
+                    <a href="">cafedealtura.com</a>
+                    <img src="assets/taza de cafe.png" alt="taza de cafe">
+                </div>
+                <nav>
+                    <a href="pages/tienda.html">Tienda</a>
+                    <a href="pages/suscripcion.html" target="_blank">Suscripcion</a>
+                    <a href="pages/paraempresas.html" target="_blank">Para empresas</a>
+                    <a href="pages/sobre_nosotros.html" target="_blank">Sobre nosotros</a>
+                    <a href="pages/contacto.html" target="_blank">Contacto</a>
+                </nav>
+                <div class="logo2">
+                    <img src="assets/Phone.svg" alt="phone">
+                    <a href="tel:+34919490518">+34 919 49 05 18</a>
+                    <input id="sesion" type="submit" value="Iniciar sesion" />
+                </div>
+                <div id="logofin"><img src="assets/fin de nav.png" alt=""></div>
+            </main>
+                <div class="imagen">
+                    <article id="article">
+                        <h3 id="planta">De la planta a tu taza</h3>
+                        <h1 id="titulo">El mejor cafe del mundo, ahora en tu casa.</h1>
+                        <p>Trabajamos con agricultores de todo el mundo para seleccionar los mejores granos de cafe y
+                            que
+                            puedas
+                            viajar desde la comodidad de tu hogar.</p>
+                        <div id="boton">
+                            <button class="origenes">Descubrir orígenes</button>
+                            <button class="comprar">Comprar café</button>
+                        </div>
+                    </article>
+                    <aside><img id="cafe" src="assets/img2.jfif" alt="cafe"></aside>
+                </div>
+        </header>
+
+
+        <section class="parte2">
+            <div id="novedades">
+                <h1>Novedades</h1>
             </div>
-            <nav>
+
+            <main class="bolsacafe">
+                <div id="costa">
+                    <div><img src="assets/coffe.svg" alt="coffe bag"></div>
+                    <div>
+                        <h4>Costa Rica Tarrazu</h4>
+                    </div>
+                    <div><input id="añadir" type="submit" value="Añadir" /></div>
+                </div>
+                <div id="colombia">
+                    <div><img src="assets/coffe 1.svg" alt="coffe bag"></div>
+                    <div>
+                        <h4>Colombia Los Naranjos</h4>
+                    </div>
+                    <div><input id="añadir" type="submit" value="Añadir" /></div>
+                </div>
+                <div id="laos">
+                    <img src="assets/coffe 2.svg" alt="coffe bag">
+                    <h4>Laos Amanecer</h4>
+                    <input id="añadir" type="submit" value="Añadir" />
+                </div>
+                <div id="etiopia">
+                    <div><img src="assets/coffe 3.png" alt="coffe bag"><br /></div>
+                    <div>
+                        <h4>Etiopia Yrgacheff</h4>
+                    </div>
+                    <div><input id="añadir" type="submit" value="Añadir" /></div>
+                </div>
+            </main>
+
+            <div id="vertodos">
+                <a id="ver" href="">Ver todos</a>
+                <img id="flecha" src="assets/ver todos.png" alt="flecha">
+            </div>
+
+        </section>
+
+        <form>
+            <label for="name">Nombre completo</label><br>
+            <input type="text" id="name" name="name" value=""><br />
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" value=""><br />
+            <label for="telefono">Telefono</label><br>
+            <input type="number" id="telefono" name="telefono" value=""><br />
+            <textarea name="help" rows="8" cols="30">¿En que puedo ayudarte?</textarea>
+        </form>
+
+        <footer>
+            <a href="">cafedealtura.com</a>
+            <img src="assets/taza de cafe.png" alt="taza de cafe">
+            <h2>Te ayudamos en</h2>
+            <div><img src="assets/Phone.svg" alt="phone">
+                <input type="submit" value="+34 919 49 0518" />
+                <input type="email" value="hola@cafedealtura.com" />
+            </div>
+            <div id="linkfooter">
                 <a href="">Tienda</a>
                 <a href="">Suscripcion</a>
                 <a href="">Para empresas</a>
                 <a href="">Sobre nosotros</a>
                 <a href="">Contacto</a>
-            </nav>
-            <div class="logo2">
-                <img src="assets/Phone.svg" alt="phone">
-                <a href="tel:+34919490518">+34 919 49 05 18</a>
-                <input id="sesion" type="submit" value="Iniciar sesion" />
+                <a href="">Politica de privacidad</a>
+                <a href="">Politica de cookies</a>
+                <a href="">Terminos y condiciones</a>
             </div>
-            <div id="logofin"><img src="assets/fin de nav.png" alt=""></div>
-        </main>
+            <h6>Todos los derechos reservados- Cafe de altura SL-2022</h6>
+        </footer>
 
-        <div class="imagen">
-        <article id="article">
-            <h3 id="planta">De la planta a tu taza</h3>
-            <h1>El mejor cafe del mundo, ahora en tu casa.</h1>
-            <p>Trabajamos con agricultores de todo el mundo para seleccionar los mejores granos de cafe y que
-                puedas
-                viajar desde la comodidad de tu hogar.</p>
-            <div id="boton">
-                <button class="origenes">Descubrir orígenes</button>
-                <button class="comprar">Comprar café</button>
-            </div>
-        </article>
-        <aside><img id="cafe" src="assets/img2.jfif" alt="cafe"></aside>
+
+
+
     </div>
-    </header>
-    <main class="main">
-        <h1 id="novedades">Novedades</h1>
-        <div id="costa">
-            <img src="assets/coffe.svg" alt="coffe bag">
-            <h4>Costa Rica Tarrazu</h4>
-            <input id="añadir" type="submit" value="Añadir" />
-        </div>
-        <div id="colombia">
-            <img src="assets/coffe 1.svg" alt="coffe bag">
-            <h4>Colombia Los Naranjos</h4>
-            <input id="añadir" type="submit" value="Añadir" />
-        </div>
-        <div id="laos">
-            <img src="assets/coffe 2.svg" alt="coffe bag">
-            <h4>Laos Amanecer</h4>
-            <input id="añadir" type="submit" value="Añadir" />
-        </div>
-        <div id="etiopia">
-            <img src="assets/coffe 3.png" alt="coffe bag"><br />
-            <h4>Etiopia Yrgacheff</h4>
-            <input id="añadir" type="submit" value="Añadir" />
-        </div>
-        <a id="ver" href="">Ver todos</a>
-        <img id="flecha" src="assets/ver todos.png" alt="flecha">
-    </main>
-
-    <form>
-        <label for="name">Nombre completo</label><br>
-        <input type="text" id="name" name="name" value=""><br />
-        <label for="email">Email</label><br>
-        <input type="email" id="email" name="email" value=""><br />
-        <label for="telefono">Telefono</label><br>
-        <input type="number" id="telefono" name="telefono" value=""><br />
-        <textarea name="help" rows="8" cols="30">¿En que puedo ayudarte?</textarea>
-    </form>
-
-    <footer>
-        <a href="">cafedealtura.com</a>
-        <img src="assets/taza de cafe.png" alt="taza de cafe">
-        <h2>Te ayudamos en</h2>
-        <img src="assets/Phone.svg" alt="phone">
-        <input type="submit" value="+34 919 49 0518" />
-        <input type="email" value="hola@cafedealtura.com" />
-        <a href="">Tienda</a>
-        <a href="">Suscripcion</a>
-        <a href="">Para empresas</a>
-        <a href="">Sobre nosotros</a>
-        <a href="">Contacto</a>
-        <a href="">Politica de privacidad</a>
-        <a href="">Politica de cookies</a>
-        <a href="">Terminos y condiciones</a>
-        <h6>Todos los derechos reservados- Cafe de altura SL-2022</h6>
-    </footer>
-
-
-
-
-
 </body>
 
 </html>
