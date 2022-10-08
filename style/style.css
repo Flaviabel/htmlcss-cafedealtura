@@ -1,4 +1,4 @@
-/*cuerpo*/ 
+/*cuerpo*/
 * {
     font-family: 'Outfit', sans-serif;
     margin: 0%;
@@ -11,11 +11,11 @@ body {
 
 #container {
     width: 1280px;
-    height: 2000px;
     margin: 0.5em auto;
     padding: 0.5em;
 
 }
+
 /*seccion1*/
 .parte1 {
     color: white;
@@ -73,6 +73,7 @@ a[href=""] {
     color: white;
     text-decoration: none;
 }
+
 /*seccion 2*/
 .imagen {
     display: flex;
@@ -95,6 +96,7 @@ a[href=""] {
     font-size: 18px;
     color: #2A5B45;
     line-height: 24px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 #titulo {
@@ -103,6 +105,7 @@ a[href=""] {
     width: 588px;
     height: 88px;
     line-height: 44px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 #article {
@@ -125,6 +128,7 @@ p,
     border-radius: 4px;
     border: none;
     color: white;
+    filter: drop-shadow(1px 4px 1px rgba(0, 0.2, 0.2, 0.3));
 }
 
 .origenes {
@@ -141,15 +145,38 @@ p,
 }
 
 /*novedades*/
+.parte2{
+    border: 1px solid;
+    padding: 15px;
+}
 
 #novedades {
     color: #2A5B45;
     display: flex;
     justify-content: center;
+    line-height: 28px;
+    font-style: normal;
+    padding: 40px;
     font-size: 24px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    padding: 90px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
+#costa,
+#colombia,
+#laos,
+#etiopia {
+    border: 1px solid #E3DED7;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.costaimg,
+.etiopiaimg,
+.laosimg,
+.colombiaimg {
+    height: 219px;
+    width: 219px;
+    padding: 24px;
 }
 
 .bolsacafe {
@@ -157,7 +184,8 @@ p,
     flex-direction: row;
     justify-content: space-around;
 }
-.añadir{
+
+.añadir {
     border-radius: 4px;
     border: #2A5B45;
     color: white;
@@ -167,27 +195,37 @@ p,
     height: 32px;
 }
 
-.boton{
+.boton {
     display: flex;
     justify-content: center;
+    padding: 20px;
+    gap: 10px;
 }
-.h4{
+
+.h4 {
     display: flex;
     justify-content: center;
+
 }
-.nombre, .precio{
+
+.nombre,
+.precio {
     display: flex;
     justify-content: center;
-    padding: 15px;
+    padding: 6px;
 }
-#ver{
+
+#ver {
     color: black;
 }
 
 #vertodos {
     display: flex;
     justify-content: center;
-    padding: 8%;
+    padding: 4%;
+    text-decoration:underline;
+    font-weight: bold;
+    gap: 15px;
 }
 
 /*FORMULARIO*/
@@ -198,6 +236,7 @@ form {
     padding-left: 50%;
     background-color: gray;
 }
+
 /*FOOTER*/
 footer {
     background-color: black;
