@@ -110,10 +110,10 @@
         </section>
 
 
-        <section class="parte3">
+        <section class="parte6">
             <main class="contenerp3">
                 <div class="nosotros">
-                    <div class="h1">
+                    <div class="contacto">
                         <h1 id="h1">Entra en contacto con nosotros</h1>
                         <p id="h1p"> Si tienes dudas, ponte en contacto con nosotros a traves del formulario y te
                             responderemos lo
@@ -127,50 +127,93 @@
                             tienda.</p>
                         <p> 742 Evergreen Terrace <br>
                             Springfield, OR 12345</p>
-                        <p> +1(555)123-4567</p>
-                        <p>support@example.com</p>
-                        <p>¿Buscas un trabajo? <a href="ver">Ver nuestras ofertas</a></p>
+                        <div class="phonenumber">
+                            <img id="imagenphone" src="assets/phone white.jpg" alt="phone">
+                            <p>+1(555)123-4567</p>
+                        </div>
+                        <div class="emaildata">
+                            <img id="emaildat" src="assets/368-3689549_email-email-png-grey.png" alt="mail">
+                            <p>support@example.com</p>
+                        </div>
+
+                        <p>¿Buscas un trabajo? <a href="A">Ver nuestras ofertas</a></p>
                     </div>
                 </div>
+
+
                 <div class="formulario">
                     <form class="formulario2">
                         <div class="label"><label for="name">Nombre completo</label>
-                            <input type="text" id="name" name="name" value="">
+                            <input class="type" type="text" id="name" name="name" value="">
                         </div>
-                        <div  class="label"><label for="email">Email</label>
-                            <input type="email" id="email" name="email" value="">
+                        <div class="label"><label for="email">Email</label>
+                            <input class="type" type="email" id="email" name="email" value="">
                         </div>
-                        <div  class="label"><label for="telefono">Telefono</label>
-                            <input type="number" id="telefono" name="telefono" value="">
+                        <div class="label">
+                            <label for="telefono">Telefono</label>
+                            <input class="type" type="number" id="telefono" name="telefono" value="">
                         </div>
-                        <div  class="label"><textarea class="textarea" name="help" rows="6"
-                                cols="60">¿En que puedo ayudarte?</textarea></div>
-                        <div  class="label">
+                        <div><textarea class="textarea" name="help" rows="6"
+                                cols="60">¿En que podemos ayudarte?</textarea></div>
+                        <div>
+                            <label class="checkbox"><input type="checkbox" id="" value="">Acepto la <a
+                                    href="checkbox">Politica de
+                                    Privacidad</a> y los <a href="checkbox">Terminos y condiciones</label>
+                        </div>
+                        <div>
                             <button class="enviar">Enviar</button>
                         </div>
                     </form>
                 </div>
             </main>
         </section>
+
+
+
         <footer>
-            <a href="">cafedealtura.com</a>
-            <img src="assets/taza de cafe.png" alt="taza de cafe">
-            <h2>Te ayudamos en</h2>
-            <div><img src="assets/Phone.svg" alt="phone">
-                <input type="submit" value="+34 919 49 0518" />
-                <input type="email" value="hola@cafedealtura.com" />
-            </div>
-            <div id="linkfooter">
-                <a href="">Tienda</a>
-                <a href="">Suscripcion</a>
-                <a href="">Para empresas</a>
-                <a href="">Sobre nosotros</a>
-                <a href="">Contacto</a>
-                <a href="">Politica de privacidad</a>
-                <a href="">Politica de cookies</a>
-                <a href="">Terminos y condiciones</a>
-            </div>
-            <h6>Todos los derechos reservados- Cafe de altura SL-2022</h6>
+            <section id="section1">
+
+                <div id="logoo">
+                    <a href="">cafedealtura.com</a>
+                    <img src="assets/taza de cafe.png" alt="taza de cafe">
+                </div>
+
+                <main id="teayudamos">
+                    <div class="ayudamos">
+                        <div>
+                            <p>Te ayudamos en</p>
+                        </div>
+                        <div id="boton">
+                            <div>
+                                <button class="button"><img src="assets/Phone.svg" alt="phone">+34 919 49 0518</button>
+                            </div>
+                            <div>
+                                <button class="button"><img id="emaild" src="assets/368-3689549_email-email-png-grey.png" alt="">hola@cafedealtura.com</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section class="linkfoo">
+
+                        <div class="linksfooter">
+                            <a href="">Tienda</a>
+                            <a href="">Suscripcion</a>
+                            <a href="">Para empresas</a>
+                            <a href="">Sobre nosotros</a>
+                            <a href="">Contacto</a>
+                        </div>
+                        <div class="linksfooter2">
+                            <a href="">Politica de privacidad</a>
+                            <a href="">Politica de cookies</a>
+                            <a href="">Terminos y condiciones</a>
+                        </div>
+                    </section>
+                </main>
+            </section>
+
+            <section id="section2">
+                <p>Todos los derechos reservados- Cafe de altura SL-2022</p>
+            </section>
         </footer>
 
 
