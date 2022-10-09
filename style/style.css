@@ -358,6 +358,22 @@ p,
     gap: 24px;
 }
 
+.telefono{
+    display: flex;
+    flex-direction: row;
+}
+.tel{
+    border: none;
+    width: 358px;
+    height: 34px;
+}
+#pais{
+    height: 32px;
+    width: 48px;
+    border: none;
+    padding: 4px;
+    margin-left: 2px;
+}
 .label {
     display: flex;
     flex-direction: column;
@@ -366,7 +382,7 @@ p,
     color: #374151;
 }
 
-.type {
+.type, .telefono{
     border-radius: 6px;
     border: 1px solid #D1D5DB;
     width: 410px;
