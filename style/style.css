@@ -239,15 +239,130 @@ p,
 }
 
 
+
+/*parte 2 */
+
+.parte2b{
+    background-image: url('../assets/unknown2.png');
+    background-size: 100%;
+    padding: 48px;
+}
+.tituloparteb{
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 24px;
+}
+
+.cajas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    align-content: center;
+}
+.envioen, .recibirpedido, .descuentos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    gap: 15px;
+    width: 100%;
+    font-size: 12px;
+}
+.logo11{
+    background-color: #2A5B45;
+    padding: 15px;
+    border-radius: 15px;
+}
+.recibirp{
+    font-size: 16px;
+    line-height: 16px;
+}
+
+
+
+
+/*parte 3*/
+
+.parte3 {
+    background-color: #2A5B45;
+}
+
+.pedido,
+.preciosbajos,
+.cafeoficina {
+    background-color: rgba(247, 245, 243, 1);
+    gap: 120px;
+    border-radius: 6px;
+    padding: 24px;
+    width: 635px;
+    color: #2B2A2B;
+}
+#preguntash1{
+    color: white;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+    padding: 15px;
+}
+.preguntash1{
+    font-size: 18px;
+}
+
+
+.preguntasfrecuentes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+.divider{
+    width: 620px;
+    color: solid black;
+}
+.textodivider{
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+.titular1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.icono {
+    height: 6px;
+    width: 10px;
+}
+
+.cafeoficina{
+    width: 635px;
+    color: #2B2A2B;
+}
+
+#resolvemosdudas{
+    padding-top: 15px;
+}
+
 /*parte 5*/
 .parte5 {
     display: flex;
     flex-direction: column;
     padding: 45px;
     background-color: rgba(247, 245, 243, 1);
-    
+
 }
-.part{
+
+.part {
     display: flex;
     flex-direction: row;
     gap: 15px;
@@ -263,7 +378,8 @@ p,
 #pruebalo {
     color: rgba(42, 91, 69, 1)
 }
-#para{
+
+#para {
     font-size: 14px;
 }
 
@@ -322,16 +438,9 @@ p,
     gap: 2px;
 }
 
-#imagenphone,
-#emaildat {
-    height: 24px;
-    width: 24px;
-}
-
 .emaildata {
     display: flex;
     flex-direction: row;
-    gap: 3px;
 }
 
 .info {
@@ -358,22 +467,25 @@ p,
     gap: 24px;
 }
 
-.telefono{
+.telefono {
     display: flex;
     flex-direction: row;
 }
-.tel{
+
+.tel {
     border: none;
     width: 358px;
     height: 34px;
 }
-#pais{
+
+#pais {
     height: 32px;
     width: 48px;
     border: none;
     padding: 4px;
     margin-left: 2px;
 }
+
 .label {
     display: flex;
     flex-direction: column;
@@ -382,7 +494,8 @@ p,
     color: #374151;
 }
 
-.type, .telefono{
+.type,
+.telefono {
     border-radius: 6px;
     border: 1px solid #D1D5DB;
     width: 410px;
