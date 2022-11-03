@@ -47,9 +47,10 @@ nav {
 
 #sesion {
     border-radius: 5px;
-    padding: 15px;
+    padding: 12px;
     background-color: rgba(128, 128, 128, 0.641);
     color: white;
+    width: 130px;
 }
 
 #logofin {
@@ -156,7 +157,6 @@ p,
 
 /*novedades*/
 .parte2 {
-    border: 1px solid;
     padding: 15px;
 }
 
@@ -169,6 +169,7 @@ p,
     padding: 40px;
     font-size: 24px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 500;
 }
 
 #costa,
@@ -380,18 +381,15 @@ p,
 }
 
 #para {
-    font-size: 14px;
+ font-size: 14px;
 }
-
-#hero {
-    height: 390px;
-    width: 588px;
-    left: 612px;
-    top: 0px;
-    border-radius: 20px;
+#hero >img {
+   height: 390px;
+   width: 568px;
+   left: 612px;
+   top: 0px;
+   border-radius: 20px;
 }
-
-
 
 
 /*parte 6*/
@@ -435,12 +433,13 @@ p,
 .phonenumber {
     display: flex;
     flex-direction: row;
-    gap: 2px;
+    gap: 12px;
 }
 
 .emaildata {
     display: flex;
     flex-direction: row;
+    gap: 12px;
 }
 
 .info {
@@ -508,6 +507,7 @@ p,
     border-radius: 6px;
     border: 1px solid #D1D5DB;
     width: 410px;
+    padding: 12px;
 }
 
 a[href*="A"] {
