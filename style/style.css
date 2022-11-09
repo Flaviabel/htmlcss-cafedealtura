@@ -200,7 +200,7 @@ a[href=""] {
 }
 
 
-/*novedades seccion 3 con 4 bolsas de cafe y botones de añadir*/
+/* seccion 3 de novedades con las 4 bolsas de cafe y boton de añadir*/
 .part3 {
     padding: 15px;
 }
@@ -225,6 +225,19 @@ a[href=""] {
     border-radius: 8px;
     padding: 8px;
 }
+
+
+.bagcosta:hover,
+.bagcolombia:hover,
+.baglaos:hover,
+.bagetiopia:hover{
+    background-color: #2B2A2B;
+}
+
+.addbutton:hover{
+background-color: #6B7280;
+}
+
 
 .costaimg,
 .etiopiaimg,
