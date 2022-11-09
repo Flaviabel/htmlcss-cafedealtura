@@ -18,10 +18,8 @@ body {
 
 
 
-
-
-/*seccion1*/
-.parte1 {
+/*Nav*/
+.part1 {
     color: white;
     background-color: black;
     display: flex;
@@ -29,7 +27,7 @@ body {
     height: 64px;
 }
 
-.logo1 {
+.logotaza{
     display: flex;
     align-items: center;
     gap: 10px;
@@ -45,7 +43,7 @@ nav {
     font-size: 14px;
 }
 
-#sesion {
+.login {
     border-radius: 5px;
     padding: 12px;
     background-color: rgba(128, 128, 128, 0.641);
@@ -53,12 +51,12 @@ nav {
     width: 130px;
 }
 
-#logofin {
+.shoppingcart {
     display: flex;
     align-items: center;
 }
 
-.logo2 {
+.logophone {
     display: flex;
     align-items: center;
     gap: 15px;
@@ -83,8 +81,8 @@ a[href=""] {
 
 
 
-/*seccion 2*/
-.imagen {
+/*seccion 1 debajo del nav incluye imagen titulo y subtitulo*/
+.firstsection{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -93,13 +91,13 @@ a[href=""] {
     gap: 8px;
 }
 
-#cafe {
+.grains{
     width: 588pxx;
     height: 390px;
     border-radius: 20px;
 }
 
-#planta {
+.cupplant{
     width: 588px;
     height: 24px;
     font-size: 18px;
@@ -108,7 +106,7 @@ a[href=""] {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-#titulo {
+.title {
     font-size: 40px;
     font-weight: bold;
     width: 588px;
@@ -117,36 +115,35 @@ a[href=""] {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-#article {
+.article {
     display: flex;
     flex-direction: column;
     gap: 10px;
     width: 588px;
     height: 232px;
-
 }
 
-p,
-.origenes,
-.comprar {
+.textbelowthetitle,
+.buttonorigins,
+.buttonbuy {
     font-size: 14px;
 }
 
-.origenes,
-.comprar {
+.buttonorigins,
+.buttonbuy {
     border-radius: 4px;
     border: none;
     color: white;
     filter: drop-shadow(1px 4px 1px rgba(0, 0.2, 0.2, 0.3));
 }
 
-.origenes {
+.buttonorigins {
     background-color: black;
     width: 168px;
     height: 40px;
 }
 
-.comprar {
+.buttonbuy {
     background-color: #2A5B45;
     width: 137px;
     height: 40px;
@@ -155,12 +152,60 @@ p,
 
 
 
-/*novedades*/
-.parte2 {
+
+/*parte 2  que incluye la imagen de cafe de fondo y tres recuadros */
+
+.part2{
+    background-image: url('../assets/unknown2.png');
+    background-size: 100%;
+    padding: 48px;
+    /* background-position: center; */ 
+}
+.titlepart2{
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 24px;
+}
+
+.boxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    align-content: center;
+}
+.send, .receiveorder, .discounts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    gap: 15px;
+    width: 100%;
+    font-size: 12px;
+}
+.logoparte2{
+    background-color: #2A5B45;
+    padding: 15px;
+    border-radius: 15px;
+}
+.getcoffee{
+    font-size: 16px;
+    line-height: 16px;
+}
+
+
+/*novedades seccion 3 con 4 bolsas de cafe y botones de añadir*/
+.part3 {
     padding: 15px;
 }
 
-#novedades {
+.titlenovedades{
     color: #2A5B45;
     display: flex;
     justify-content: center;
@@ -172,10 +217,10 @@ p,
     font-weight: 500;
 }
 
-#costa,
-#colombia,
-#laos,
-#etiopia {
+.bagcosta,
+.bagcolombia,
+.baglaos,
+.bagetiopia {
     border: 1px solid #E3DED7;
     border-radius: 8px;
     padding: 8px;
@@ -190,13 +235,13 @@ p,
     padding: 24px;
 }
 
-.bolsacafe {
+.coffeebag {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.añadir {
+.addbutton {
     border-radius: 4px;
     border: #2A5B45;
     color: white;
@@ -206,7 +251,7 @@ p,
     height: 32px;
 }
 
-.boton {
+.buttonnovedades {
     display: flex;
     justify-content: center;
     padding: 20px;
@@ -216,7 +261,6 @@ p,
 .h4 {
     display: flex;
     justify-content: center;
-
 }
 
 .nombre,
@@ -226,11 +270,11 @@ p,
     padding: 6px;
 }
 
-#ver {
+#enlacever {
     color: black;
 }
 
-#vertodos {
+.vertodos {
     display: flex;
     justify-content: center;
     padding: 4%;
@@ -241,83 +285,13 @@ p,
 
 
 
-/*parte 2 */
+/*parte 4 de preguntas frecuentes con tres secciones*/
 
-.parte2b{
-    background-image: url('../assets/unknown2.png');
-    background-size: 100%;
-    padding: 48px;
-}
-.tituloparteb{
-    display: flex;
-    justify-content: center;
-    color: #FFFFFF;
-    font-weight: 500;
-    font-size: 18px;
-    padding: 24px;
-}
-
-.cajas{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 30px;
-    align-content: center;
-}
-.envioen, .recibirpedido, .descuentos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: white;
-    border-radius: 10px;
-    padding: 40px;
-    gap: 15px;
-    width: 100%;
-    font-size: 12px;
-}
-.logo11{
-    background-color: #2A5B45;
-    padding: 15px;
-    border-radius: 15px;
-}
-.recibirp{
-    font-size: 16px;
-    line-height: 16px;
-}
-
-
-
-
-/*parte 3*/
-
-.parte3 {
+.part4 {
     background-color: #2A5B45;
 }
 
-.pedido,
-.preciosbajos,
-.cafeoficina {
-    background-color: rgba(247, 245, 243, 1);
-    gap: 120px;
-    border-radius: 6px;
-    padding: 24px;
-    width: 635px;
-    color: #2B2A2B;
-}
-#preguntash1{
-    color: white;
-    font-size: 24px;
-    line-height: 28px;
-    font-weight: 500;
-    padding: 15px;
-}
-.preguntash1{
-    font-size: 18px;
-}
-
-
-.preguntasfrecuentes {
+.questioncontainer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -325,37 +299,59 @@ p,
     padding-top: 48px;
     padding-bottom: 48px;
 }
-.divider{
+
+.order,
+.lowprices,
+.sendtooffice {
+    background-color: rgba(247, 245, 243, 1);
+    gap: 120px;
+    border-radius: 6px;
+    padding: 24px;
+    width: 635px;
+    color: #2B2A2B;
+}
+
+.frequentquestions{
+    color: white;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+    padding: 15px;
+}
+.lowpricesquestion{
+    font-size: 18px;
+}
+
+
+
+.line{
     width: 620px;
     color: solid black;
 }
-.textodivider{
+.innertext{
     padding-top: 10px;
     font-size: 12px;
 }
 
-.titular1 {
+.boxopening {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.icono {
+.openingicon{
     height: 6px;
     width: 10px;
+    border: none;
 }
 
-.cafeoficina{
-    width: 635px;
-    color: #2B2A2B;
-}
-
-#resolvemosdudas{
+#linkquestions{
     padding-top: 15px;
 }
 
-/*parte 5*/
-.parte5 {
+/*parte 5 seccion de como llegar e imagen*/
+
+.part5 {
     display: flex;
     flex-direction: column;
     padding: 45px;
@@ -363,29 +359,30 @@ p,
 
 }
 
-.part {
+.containerpart5 {
     display: flex;
     flex-direction: row;
     gap: 15px;
 }
 
-.parte5-2 {
+.textcontainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 16px;
 }
 
-#pruebalo {
+.tryit {
     color: rgba(42, 91, 69, 1)
 }
 
-#para {
- font-size: 14px;
+.visitcoffeeshop {
+ font-size: 15px;
 }
+
 #hero >img {
    height: 390px;
-   width: 568px;
+   width: 550px;
    left: 612px;
    top: 0px;
    border-radius: 20px;
@@ -393,21 +390,21 @@ p,
 
 
 /*parte 6*/
-.parte6 {
+.part6 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     background: #E3DED7;
 }
 
-.contenerp3 {
+.containerpart6 {
     display: flex;
     flex-direction: row;
     margin-left: 40px;
     margin-right: 40px;
 }
 
-.nosotros {
+.textsection {
     color: #6B7280;
     display: flex;
     flex-direction: column;
@@ -415,18 +412,18 @@ p,
     margin-right: 28px;
 }
 
-#h1 {
+#titlecontact {
     color: black;
     font-size: 18px;
 }
 
-.contacto {
+.contact {
     display: flex;
     flex-direction: column;
     margin-bottom: 32px;
 }
 
-#h1p {
+#subtitlecontact {
     font-size: 14px;
 }
 
@@ -459,7 +456,7 @@ p,
 
 }
 
-.formulario2 {
+.containerform {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -471,13 +468,13 @@ p,
     flex-direction: row;
 }
 
-.tel {
+.numberphone {
     border: none;
     width: 358px;
     height: 34px;
 }
 
-#pais {
+.countryselector {
     height: 32px;
     width: 48px;
     border: none;
@@ -519,7 +516,7 @@ a[href*="checkbox"] {
     color: #374151;
 }
 
-.enviar {
+.send1 {
     border-radius: 4px;
     border: none;
     text-decoration: none;
@@ -535,7 +532,7 @@ footer {
     height: 310px;
 }
 
-#section1 {
+.parte7 {
     background-color: black;
     color: white;
     display: flex;
@@ -544,7 +541,7 @@ footer {
     gap: 15px;
 }
 
-#logoo {
+#logocafedealtura {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -562,7 +559,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-content: flex-start;
-    gap: 12px;
+    gap: 15px;
     margin-right: 30%;
 }
 
@@ -574,32 +571,17 @@ footer {
     font-size: 14px;
 }
 
-#boton {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    font-size: 14px;
-}
-
 .button {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    top: 40px;
-    border-radius: 4px;
-    padding: 12px 24px;
+    border-radius: 6px;
+    padding: 10px 24px;
     background-color: rgba(81, 80, 81, 1);
     color: white;
-    gap: 5px;
-
-}
-
-#emaild {
-    height: 18px;
-    width: 24px;
-    left: 3px;
-    top: 3px;
+    height: 50px;
+    margin-top: 10px;
 }
 
 .linksfooter,
@@ -609,7 +591,7 @@ footer {
     gap: 10px;
 }
 
-#section2 {
+#parte8{
     background: #2B2A2B;
     color: white;
     display: flex;
