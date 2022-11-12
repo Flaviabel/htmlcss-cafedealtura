@@ -23,7 +23,19 @@ document.addEventListener('DOMContentLoaded', () => {
             nombre: 'Etiopia Yragacheff',
             precio: 9,
             imagen: 'assets/coffe 3.png'
-        }
+        },
+        {
+            id:5,
+            nombre: 'Kenia Ndunduri',
+            precio: 9,
+            imagen: 'assets/bolsakenia.png'
+        },
+        {
+            id: 6,
+            nombre: 'Etiopia Sidamo',
+            precio: 9,
+            imagen: 'assets/bolsaetiopiasidamo.png'
+        },
 
     ];
 

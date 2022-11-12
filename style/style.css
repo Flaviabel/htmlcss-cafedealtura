@@ -62,21 +62,7 @@ nav {
     gap: 15px;
 }
 
-a[href="tel:+34919490518"] {
-    color: white;
-    text-decoration: none;
-}
-
-a[href*="pages"] {
-    color: white;
-    text-decoration: none;
-}
-
-a[href=""] {
-    color: white;
-    text-decoration: none;
-}
-a[href="second.html"] {
+a[href*="pages"],a[href="tienda.html"],a[href=""],a[href="tel:+34919490518"] {
     color: white;
     text-decoration: none;
 }

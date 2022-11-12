@@ -1,0 +1,10 @@
+.cestatitulo{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+a[href="index.html"]{
+    color: white;
+    text-decoration: none;
+}
