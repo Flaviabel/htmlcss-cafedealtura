@@ -76,6 +76,10 @@ a[href=""] {
     color: white;
     text-decoration: none;
 }
+a[href="second.html"] {
+    color: white;
+    text-decoration: none;
+}
 
 
 
@@ -217,32 +221,26 @@ a[href=""] {
     font-weight: 500;
 }
 
-.bagcosta,
-.bagcolombia,
-.baglaos,
-.bagetiopia {
+.bag{
     border: 1px solid #E3DED7;
     border-radius: 8px;
     padding: 8px;
 }
 
 
-.bagcosta:hover,
-.bagcolombia:hover,
-.baglaos:hover,
-.bagetiopia:hover{
-    background-color: #2B2A2B;
+.bag:hover{
+    box-sizing: border-box;
+    background: #F7F5F3;
+    border: 1px solid #E3DED7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .addbutton:hover{
-background-color: #6B7280;
+background-color: #2A5B45;
 }
 
 
-.costaimg,
-.etiopiaimg,
-.laosimg,
-.colombiaimg {
+.bagimg{
     height: 219px;
     width: 219px;
     padding: 24px;
@@ -258,7 +256,7 @@ background-color: #6B7280;
     border-radius: 4px;
     border: #2A5B45;
     color: white;
-    background-color: #2A5B45;
+    background-color:rgba(42, 91, 69, 0.7);
     font-size: 14px;
     width: 60px;
     height: 32px;
@@ -611,4 +609,18 @@ footer {
     justify-content: center;
     align-items: center;
     height: 40px;
+}
+
+
+/* Segunda pagina de HTML- carrito de compra */
+.pagcesta{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+
+}
+.articleaside{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }

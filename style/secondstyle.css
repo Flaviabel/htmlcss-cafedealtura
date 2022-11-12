@@ -1,0 +1,28 @@
+a[href="index.html"]{
+    color: white;
+    text-decoration: none;
+}
+
+
+.carrito{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    font-size: 20px;
+    background-color: black;
+    color: wheat;
+}
+
+.items{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.btn{
+    background-color: #2A5B45;
+    border: #2A5B45;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}

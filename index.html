@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
-
+    <link rel="second" href="second.html">
     <title>Document</title>
 </head>
 
@@ -28,7 +28,7 @@
                     <img src="assets/taza de cafe.png" alt="taza de cafe">
                 </div>
                 <nav>
-                    <a href="pages/tienda.html">Tienda</a>
+                    <a href="second.html" target="_blank">Tienda</a>
                     <a href="pages/suscripcion.html" target="_blank">Suscripción</a>
                     <a href="pages/paraempresas.html" target="_blank">Para empresas</a>
                     <a href="pages/sobre_nosotros.html" target="_blank">Sobre nosotros</a>
@@ -39,7 +39,8 @@
                     <a href="tel:+34919490518">+34 919 49 05 18</a>
                     <input class="login" type="submit" value="Iniciar sesión" />
                 </div>
-                <div class="shoppingcart"><img src="assets/fin de nav.png" alt=""></div>
+                <div class="shoppingcart" > <a target="_blank" href="second.html"><img src="assets/fin de nav.png" alt=""></a>
+                </div>
             </main>
             <!-- Seccion de imagen titulo y botones -->
             <div class="firstsection">
@@ -104,45 +105,46 @@
             </div>
 
             <main class="coffeebag">
-                <div class="bagcosta">
-                    <div><img class="costaimg" src="assets/coffe.svg" alt="coffe bag"></div>
+                <div class="bag">
+                    <div><img class="bagimg" src="assets/coffe.svg" alt="coffe bag"></div>
                     <div class="h4">
                         <h4 class="nombre">Costa Rica Tarrazú </h4>
                     </div>
                     <div class="precio">
                         <h4>9,00 €</h4>
                     </div>
-                    <div class="buttonnovedades"><input class="addbutton" type="submit" value="Añadir" /></div>
+                    <div class="buttonnovedades"><input class="addbutton" onclick="añadir()" type="submit" value="Añadir" /></div>
                 </div>
-                <div class="bagcolombia">
-                    <div><img class="colombiaimg" src="assets/coffe 1.svg" alt="coffe bag"></div>
+
+                <div class="bag">
+                    <div><img class="bagimg" src="assets/coffe 1.svg" alt="coffe bag"></div>
                     <div class="h4">
                         <h4 class="nombre">Colombia Los Naranjos</h4>
                     </div>
                     <div class="precio">
                         <h4>9,00 €</h4>
                     </div>
-                    <div class="buttonnovedades"><input class="addbutton" type="submit" value="Añadir" /></div>
+                    <div class="buttonnovedades"><input class="addbutton" onclick="añadir()" type="submit" value="Añadir" /></div>
                 </div>
-                <div class="baglaos">
-                    <img class="laosimg" src="assets/coffe 2.svg" alt="coffe bag">
+                <div class="bag">
+                    <img class="bagimg" src="assets/coffe 2.svg" alt="coffe bag">
                     <div class="h4">
                         <h4 class="nombre">Cafe Madrid</h4>
                     </div>
                     <div class="precio">
                         <h4>9,00 €</h4>
                     </div>
-                    <div class="buttonnovedades"><input class="addbutton" type="submit" value="Añadir" /></div>
+                    <div class="buttonnovedades"><input class="addbutton" onclick="añadir()" type="submit" value="Añadir" /></div>
                 </div>
-                <div class="bagetiopia">
-                    <div><img class="etiopiaimg" src="assets/coffe 3.png" alt="coffe bag"><br /></div>
+                <div class="bag">
+                    <div><img class="bagimg" src="assets/coffe 3.png" alt="coffe bag"><br /></div>
                     <div class="h4">
                         <h4 class="nombre">Etiopia Yrgacheff </h4>
                     </div>
                     <div class="precio">
                         <h4>9,00 €</h4>
                     </div>
-                    <div class="buttonnovedades"><input class="addbutton" type="submit" value="Añadir" /></div>
+                    <div class="buttonnovedades"><input class="addbutton" onclick="añadir()" type="submit" value="Añadir" /></div>
                 </div>
             </main>
 
@@ -161,7 +163,7 @@
                 <div class="order">
                     <div class="boxopening">
                         <h1 class="preguntash1">¿Cómo hago el pedido?</h1>
-                        <button class="openingicon" onclick="openClose()"><img src="icono/Icon2.png" alt=""></button>
+                        <button class="openingicon" onclick="openClose()"><img id="iconoclick1" src="icono/Icon2.png" alt=""></button>
                     </div>
                     <div id="funcionopenclose">
                         <img class="line" src="phone/Divider.png" alt="">
@@ -175,7 +177,7 @@
                 <div class="lowprices">
                     <div class="boxopening">
                         <h1 class="lowpricesquestion">¿Por qué los precios son tan bajos?</h1>
-                        <button class="openingicon" onclick="closeOpen()"><img src="icono/Icon2.png" alt=""></button>
+                        <button class="openingicon" onclick="closeOpen()"><img id="iconoclick2" src="icono/Icon2.png" alt=""></button>
                     </div>
                     <div id="funcionopen">
                         <img class="line" src="phone/Divider.png" alt="">
@@ -193,7 +195,7 @@
                 <div class="sendtooffice">
                     <div class="boxopening">
                         <h1>¿Es posible enviar café a mi oficina?</h1>
-                        <button class="openingicon" onclick="closeClose()"><img src="icono/Icon.png" alt=""></button>
+                        <button class="openingicon" onclick="closeClose()"><img id="iconoclick3" src="icono/Icon.png" alt=""></button>
                     </div>
                     <div id="funcionclose">
                         <img class="line" src="phone/Divider.png" alt="">
