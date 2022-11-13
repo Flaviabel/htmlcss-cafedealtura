@@ -524,6 +524,20 @@ a[href*="checkbox"] {
     filter: drop-shadow(1px 4px 1px rgba(0, 0.2, 0.2, 0.3));
 }
 
+
+/* validacion de formulario */
+.type:valid,.textarea:valid, .numberphone:valid{
+    border: 2px solid green;
+}
+.type:invalid,.textarea:invalid, .numberphone:invalid{
+    border: 2px solid red;
+}
+.type:invalid:required, .textarea:invalid:required, .numberphone:invalid:required {
+    background-color: 2px solid;
+}
+
+
+
 /*FOOTER*/
 footer {
     height: 310px;

@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
             imagen: 'assets/coffe 3.png'
         },
         {
-            id:5,
+            id: 5,
             nombre: 'Kenia Ndunduri',
             precio: 9,
             imagen: 'assets/bolsakenia.png'
@@ -44,6 +44,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let carrito = document.querySelector('.carrito');
     let totalcarrito = document.querySelector('.total');
     let botonVaciar = document.querySelector('.boton-vaciar');
+    let nuevoLocalStorage = window.localStorage;
+
 
     function pintarProducto() {
         datos.forEach((datosarray) => {
@@ -83,6 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function agregarProducto(e) {
         carritoArray.push(e.target.getAttribute('marcador'))
         pintarCarrito();
+        guardarCarritoEnLocalStorage();
     }
 
 
@@ -129,23 +132,34 @@ document.addEventListener('DOMContentLoaded', () => {
             return carritoId !== id;
         });
         pintarCarrito();
+        guardarCarritoEnLocalStorage();
     }
-
+    function vaciarCarrito() {
+        carritoArray = [];
+        pintarCarrito();
+        localStorage.clear();
+    }
     function calcularTotal() {
         return carritoArray.reduce((total, item) => {
             let nuevoItem = datos.filter((itemDatos) => {
                 return itemDatos.id === parseInt(item);
             });
             return total + nuevoItem[0].precio;
-        }, 0).toFixed(2);
+        }, 0);
     }
 
-    function vaciarCarrito() {
-        carritoArray = [];
-        pintarCarrito();
+    function guardarCarritoEnLocalStorage() {
+        nuevoLocalStorage.setItem('carritoArray', JSON.stringify(carritoArray));
+    }
+    function cargarCarritoDeLocalStorage() {
+        if (nuevoLocalStorage.getItem('carrito') !== null) {
+            carritoArray = JSON.parse(nuevoLocalStorage.getItem('carritoArray'));
+        }
     }
 
     botonVaciar.addEventListener('click', vaciarCarrito);
+    cargarCarritoDeLocalStorage();
     pintarProducto();
     pintarCarrito();
 });
+

@@ -8,3 +8,11 @@ a[href="index.html"]{
     color: white;
     text-decoration: none;
 }
+.productos-total{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.section{
+    margin-top: 100px;
+}

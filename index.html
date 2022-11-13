@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
     <link rel="tienda" href="tienda.html">
     <link rel="Cesta" href="cesta.html">
-    <title>Document</title>
+    <title>cafedealtura</title>
 </head>
 
 <body>
@@ -273,10 +273,10 @@
                 <div class="formulario">
                     <form class="containerform">
                         <div class="label"><label for="name">Nombre completo</label>
-                            <input class="type" type="text" id="name" name="name" value="">
+                            <input class="type" type="text" id="name" name="name" required pattern="[a-zA-Z]{3,16}\s[a-zA-Z]{3,16}">
                         </div>
                         <div class="label"><label for="email">Email</label>
-                            <input class="type" type="email" id="email" name="email" value="">
+                            <input class="type" type="email" id="email" name="email" required>
                         </div>
                         <div class="label">
                             <label for="telefono">Telefono</label>
@@ -286,12 +286,12 @@
                                         <option value="+34">ESPAÑA</option>
                                         <option value="+52">MEXICO</option>
                                     </select></div>
-                                <div><input class="numberphone" type="text" name="telefono" value="+1 (555)987-6543">
+                                <div><input class="numberphone" type="text" name="telefono" required pattern="[+][0-9]{11}">
                                 </div>
                             </main>
                         </div>
                         <div><textarea class="textarea" name="help" rows="6"
-                                cols="60">¿En que podemos ayudarte?</textarea></div>
+                                cols="60" required>¿En que podemos ayudarte?</textarea></div>
                         <div>
                             <label class="checkbox"><input type="checkbox" id="" value="">Acepto la <a
                                     href="checkbox">Politica de
